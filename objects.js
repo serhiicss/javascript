@@ -9,20 +9,31 @@ person.toUppercase(); //object and method
 var foo = [];
 
 // add values to the array using push method
-
 var foo = [];
 foo.push("bar");
 foo.push(100);
 // foo = ["bar", 100];
 
-// this is an object
 
+// ----------------------------------------------------
+// this is an object
 var person = {
-  "firstname": "John";
-  "lastname": "Doe";
-  "age": 40;
-  "height": 180;
+  "firstname": "John",
+  "lastname": "Doe",
+  "age": 40,
+  "height": 180
 }
+
+// To access object properties:
+
+// dot notation
+var newPerson = person.firstname;
+
+// bracket notation (in case property has a space)
+var newPerson = person["first name"];
+// ----------------------------------------------------
+
+
 
 // OBJECT CONSTRUCTOR
 // how object conctructor works
@@ -35,7 +46,7 @@ var person = function(firstname, lastname, age, height) {
   this.height = height;
 }
 
-// now we create an object usin the constructor above
+// now we create an object using the constructor above
 
 myFriend = new person("Mark", "Goldberg", 45, 175); // new person takes person from the constructor above
 
