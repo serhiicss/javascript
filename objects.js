@@ -4,17 +4,6 @@ var person = ("Serhii");
 person.length // person is objectname, length is propertyname
 person.toUppercase(); //object and method
 
-// creating an empty object
-
-var foo = [];
-
-// add values to the array using push method
-var foo = [];
-foo.push("bar");
-foo.push(100);
-// foo = ["bar", 100];
-
-
 // ----------------------------------------------------
 // this is an object
 var person = {
@@ -31,9 +20,24 @@ var newPerson = person.firstname;
 
 // bracket notation (in case property has a space)
 var newPerson = person["first name"];
+
 // ----------------------------------------------------
+// Update property values
+var ourDog = {
+  "name": "Camper",
+  "legs": 4,
+  "tails": 1,
+  "friends": ["everything!"]
+};
 
+ourDog.name = "Happy Camper";
+//or
+ourDog["name"] = "Happy Camper";
+//same way to add new properties and values
 
+// delete properties
+delete ourDog.tails;
+// ----------------------------------------------------
 
 // OBJECT CONSTRUCTOR
 // how object conctructor works

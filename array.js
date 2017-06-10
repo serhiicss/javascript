@@ -7,6 +7,15 @@ var arr = [
 ];
 
 
+// creating an empty object
+var foo = [];
+
+// add values to the array using push method
+var foo = [];
+foo.push("bar");
+foo.push(100);
+// foo = ["bar", 100];
+
 // BRACKET NOTATION
 //access array via bracket notation
 
