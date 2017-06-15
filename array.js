@@ -53,7 +53,7 @@ singleVal = array.reduce(function(previousVal, currentVal) {
   return previousVal + currentVal;
 });
 
-console.log(singleVal); //30 the total of all values in the array (4+5+6+7+8). Could also substract or any other mat operartion.
+console.log(singleVal); //30 the total of all values in the array (4+5+6+7+8). Could also substract or any other math operartion.
 
 
 // array.filter iterates through an array and filters out elements where a given condition is not true.
@@ -85,18 +85,20 @@ var newArray = [];
 newArray = array.reverse(); // [ 7, 6, 5, 4, 3, 2, 1 ]
 
 
-// array.contact
+// array.concat
 var oldArray = [1,2,3];
 var newArray = [];
 var concatMe = [4,5,6];
 
 newArray = oldArray.concat(concatMe); // [1,2,3,4,5,6]
 
+
 // array.split splits a string into an array
 var string = "Split me into an array";
 var array = [];
 
 array = string.split(' '); // [ 'Split', 'me', 'into', 'an', 'array' ] splits between spaces
+
 
 // array.join  joins each element of an array into a string separated by whatever delimiter you provide as an argument.
 var joinMe = ["Split","me","into","an","array"];
