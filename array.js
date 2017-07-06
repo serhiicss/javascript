@@ -36,6 +36,36 @@ arr.pop // removes the last element of an array
 arr.shift // removes the first element of an array
 
 
+
+// --------------------------------------------------------------
+// WORKING WITH ARRAYS:
+// --------------------------------------------------------------
+
+
+// The indexOf() method returns the first index at which a given element can be found in the array,
+// or -1 if it is not present.
+
+var a = [2, 9, 9]; 
+a.indexOf(2); // 0 
+a.indexOf(7); // -1
+a.indexOf(9, 2); // 2 - explanations: 2nd parameter indicates the position of the array
+// where the search begins. In this case it starts at poisiton 2 which is second 9. 
+
+// The lastIndexOf() starts searching from the end of the array
+
+// --------------------------------------------------------------
+
+
+// for loop
+var myArr = [ 1, 2, 3];
+
+var myTotal = 0;
+for (var i = 0; i < myArr.length; i++) {
+  myTotal += myArr[i];
+}
+//myTotal = 6; 0+1+2+3=6
+
+
 // array.map iterates trough arrays
 var oldArray = [1, 2, 3];
 var timesFour = oldArray.map(function(val){
@@ -103,3 +133,10 @@ var joinMe = ["Split","me","into","an","array"];
 var joinedString = '';
 
 joinedString = joinMe.join(" "); // ['Split me into an array']
+
+// The .isArray() function determines whether the passed value is an Array.
+var string = "Split me into an array";
+var joinMe = ["Split","me","into","an","array"];
+
+var test1 = Array.isArray(string); //false
+var test1 = Array.isArray(joinMe); //true
