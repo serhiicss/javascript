@@ -11,3 +11,7 @@ true
     return Array.isArray(value);
 }
 ```
+```javascript
+var s = "JavaScript syntax highlighting";
+alert(s);
+```
