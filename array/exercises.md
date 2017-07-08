@@ -7,11 +7,6 @@ false
 true
 <br>
 ## Solution:
-``` var is_array = function(value) {
+`var is_array = function(value) {`
     return Array.isArray(value);
 }
-```
-```javascript
-var s = "JavaScript syntax highlighting";
-alert(s);
-```
