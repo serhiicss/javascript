@@ -86,7 +86,11 @@ singleVal = array.reduce(function(previousVal, currentVal) {
 console.log(singleVal); //30 the total of all values in the array (4+5+6+7+8). Could also substract or any other mat operartion.
 
 
+// --------------------------------------------------------------
+// filter
+// --------------------------------------------------------------
 // array.filter iterates through an array and filters out elements where a given condition is not true.
+// parameters: see MDN
 var oldArray = [1,2,3,4,5,6,7,8,9,10];
 
 var newArray = oldArray.filter(function(val){
@@ -94,7 +98,19 @@ var newArray = oldArray.filter(function(val){
 });
 // will return [1,2,3,4,5]
 
+// using a function
+var friends = ["Rachel", "Joey", "Ross", "Phebe", "Monica", "Chandlers"];
 
+function filteredFriends (name) {
+  return name.length < 5;
+}
+
+var shortNames = friends.filter(filteredFriends); //[ 'Joey', 'Ross' ]
+
+
+// --------------------------------------------------------------
+// sort
+// --------------------------------------------------------------
 // array.sort
 var scores = [1, 10, 21, 2]; 
 scores.sort(); // [1, 10, 2, 21]
@@ -114,6 +130,14 @@ var newArray = [];
 
 newArray = array.reverse(); // [ 7, 6, 5, 4, 3, 2, 1 ]
 
+// array.slice slices an element based on parameters array.slice(1,3)
+var a = ['zero', 'one', 'two', 'three'];
+var sliced = a.slice(1, 3); // ['one', 'two'] slices from before index 1 and after index 3
+
+// array.splice slices an element based on parameters and returns spliced values
+var a = ['zero', 'one', 'two', 'three'];
+var spliced = a.splice(1, 3); // ['zero'] returns spliced element. 
+//Also adds elements at specified index, see MDN.
 
 // array.contact
 var oldArray = [1,2,3];
