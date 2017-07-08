@@ -67,6 +67,7 @@ for (var i = 0; i < myArr.length; i++) {
 
 
 // array.map iterates trough arrays
+// array.map(function callback(currentValue, index, array)
 var oldArray = [1, 2, 3];
 var timesFour = oldArray.map(function(val){
   return val * 4;
@@ -76,6 +77,7 @@ console.log(oldArray);  // returns [1, 2, 3]
 
 
 // array.reduce iterates trough arrays and condense it into one value
+// arr.reduce(callback(previousValue, currentValue, currentIndex, array ))
 var array = [4,5,6,7,8];
 var singleVal = 0;
 
@@ -83,14 +85,19 @@ singleVal = array.reduce(function(previousVal, currentVal) {
   return previousVal + currentVal;
 });
 
-console.log(singleVal); //30 the total of all values in the array (4+5+6+7+8). Could also substract or any other mat operartion.
+console.log(singleVal); //30 the total of all values in the array (4+5+6+7+8).
+// Could also substract or any other math operartion.
 
+// TIPS: for objects:
+singleVal = array.reduce(function(previousVal, currentVal) {
+  return previousVal + currentVal.name; // not previousVal.name + currentVal.name
+}, 0); // declare initialvalue (0) and use previousVal without dot notation.
 
 // --------------------------------------------------------------
 // filter
 // --------------------------------------------------------------
 // array.filter iterates through an array and filters out elements where a given condition is not true.
-// parameters: see MDN
+// parameters: (element, index, array)
 var oldArray = [1,2,3,4,5,6,7,8,9,10];
 
 var newArray = oldArray.filter(function(val){
@@ -99,13 +106,32 @@ var newArray = oldArray.filter(function(val){
 // will return [1,2,3,4,5]
 
 // using a function
-var friends = ["Rachel", "Joey", "Ross", "Phebe", "Monica", "Chandlers"];
+var friends = ["Rachel", "Joey", "Ross", "Phebe", "Monica", "Chandler"];
 
 function filteredFriends (name) {
   return name.length < 5;
 }
 
 var shortNames = friends.filter(filteredFriends); //[ 'Joey', 'Ross' ]
+
+// every
+// array.every method tests whether all elements in the array 
+// pass the test implemented by the provided function.
+function isBigEnough(element, index, array) { 
+  return element >= 10; 
+} 
+[12, 5, 8, 130, 44].every(isBigEnough);   // false 
+[12, 54, 18, 130, 44].every(isBigEnough); // true
+
+// some
+//  method tests whether some element in the array
+// passes the test implemented by the provided function.
+function isBiggerThan10(element, index, array) {
+  return element > 10;
+}
+
+[2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+[12, 5, 8, 1, 4].some(isBiggerThan10); // true
 
 
 // --------------------------------------------------------------

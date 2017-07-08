@@ -31,3 +31,8 @@ i++; --i;
 x = 7; // is expression with side affect (means it is meaningful). We asigned a value of 7 to x.
 
 2 + 2; // just resolves the value without asigment to anything.
+
+
+//---------------------------------------------------------------------------------------
+// CHAINS
+//---------------------------------------------------------------------------------------
