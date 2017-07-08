@@ -7,6 +7,8 @@ false
 true
 <br>
 ## Solution:
-`var is_array = function(value) {`
+<br>
+```var is_array = function(value) {
     return Array.isArray(value);
 }
+```
