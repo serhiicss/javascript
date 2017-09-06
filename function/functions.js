@@ -6,7 +6,7 @@ function myFunction(a, b) {
 // 12
 
 // --------------------------------------------------------------
-function totalSum(a,b) {
+function totalSum(a, b) {
     console.log(a + b);
 }
 
@@ -34,3 +34,32 @@ localOrGlobal(); //foo2. local variable takes precedence
 function timesFive(num) {
     return num * 5;
 }
+
+//-------------------------------------------------------------------
+
+let calC = function(num1, num2, calcType){
+  if (calcType === "add"){
+    return num1 + num2;
+  } else if (calcType === "divide") {
+    return num1 / num2;
+  }
+}
+
+calC(10, 20, "add");
+
+
+// or
+
+let add = function(a,b){
+  return a+b;
+}
+
+let divide = function(a,b){
+  return a/b;
+}
+
+let calC = function(num1, numb2, callback){
+  return callback(num1, numb2);
+}
+
+calC(10, 20, divide);

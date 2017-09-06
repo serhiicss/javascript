@@ -39,3 +39,13 @@ function testLogicalAnd(val) {
 testLogicalAnd(30) //true
 testLogicalAnd(50) //true
 testLogicalAnd(55) //false
+
+
+// Conditional (ternary) Operator
+// condition ? expr1 : expr2
+// If condition is true, the operator returns the value of expr1;
+// otherwise, it returns the value of expr2.
+
+var age = 18;
+var canIvote = (age >= 18) ? true : false;
+var canIvote = (age >= 18) ? "You can vote" : "Come back whne you are 18";
