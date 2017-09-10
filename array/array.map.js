@@ -43,7 +43,7 @@ friends.map(toLower); // rachel, ross
 
 
 // --------------------------------------------------------------
-// Chahining together
+// Chaining together
 var prices = [10,20,30,40,50,60,70,80,90];
 var taxRate = 1.08;
 

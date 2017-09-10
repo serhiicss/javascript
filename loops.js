@@ -33,7 +33,15 @@ for (var i = 0; i < myArr.length; i++) {
 }
 
 //---------------------------------------------------------------
-// Nesting For Loops
+// Backward loop (notice -1 for array length. Array length starts from 1 while position of elements starts at 0)
+var vacationSpots = ['Paris', 'London', 'Barcelona'];
+
+for (var i = vacationSpots.length -1; i >= 0 ; i--) {
+  console.log('I would love to visit ' + vacationSpots[i]);
+}
+
+//---------------------------------------------------------------
+// Nesting 'for' Loops
 
 var arr = [
   [1,2], [3,4], [5,6]

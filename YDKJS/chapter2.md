@@ -15,7 +15,7 @@
 
 >Coercion comes in two forms in JavaScript: explicit and implicit. Explicit coercion is simply that you can see obviously from the code that a conversion from one type to another will occur, whereas implicit coercion is when the type conversion can happen as more of a non-obvious side effect of some other operation.
 
-explicit coercion:
+**explicit coercion:**
 
 ```
 var a = "42";
@@ -26,7 +26,7 @@ a;				// "42"
 b;				// 42 -- the number!
 ```
 
-implicit coercion:
+**implicit coercion:**
 
 ```
 var a = "42";
@@ -53,7 +53,7 @@ b;				// 42 -- the number!
 * true  
 * [ ], [ 1, "2", 3 ] (arrays)  
 * { }, { a: 42 } (objects)  
-*function foo() { .. } (functions)
+* function foo() { .. } (functions)
 
 ##### Equality
 
