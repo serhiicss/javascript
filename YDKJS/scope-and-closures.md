@@ -54,7 +54,8 @@ Two distinct actions are taken for a variable assignment:
 2. ...When executing, `Engine` looks up the variable in `Scope` and assigns to it, if found.
 
 ##### LHS and RHS lookups
-"who's the target of the assignment (LHS)" and "who's the source of the assignment (RHS)".
+"who's the target of the assignment (LHS)" and "who's the source of the assignment (RHS)".  
+**_RHS_** is when it's not a **_LHS_** (not a declaration).
 ```
 var foo = "bar";
 ```
