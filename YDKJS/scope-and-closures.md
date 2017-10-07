@@ -101,3 +101,6 @@ Global variable (without `var`):
 ```
 
 To prevent declaring variables without `var` use `"use strict";` before each module.
+
+###Functions First  
+Functions are hoisted first, and then variables.

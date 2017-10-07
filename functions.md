@@ -2,7 +2,7 @@
 ---
 If "function" is the very first thing in the statement, then it's a function declaration. Otherwise, it's a function expression.  
 `function foo(){..}` - **Function declaration**.  Identifier `foo` is global.  
-`(function foo(){..})();` - **Function expression**. Identifier `foo` is local (bound to itself).
+`(function foo(){..})();` - **Function expression**. Identifier `foo` is local (bound to itself).  
 `(function(){..})();` - **Anonymous function expression**. Identifier `foo` is local (bound to itself).
 
 **Syntax**
