@@ -1,3 +1,13 @@
+## Chapter 1: What is Scope?
+---
+
+### Compiler Theory
+3 steps of "compilation" before execution:
+
+1. **Tokenizing/Lexing** - breaking breaking up a string of characters into meaningful (to the language) chunks, called tokens.
+2. **Parsing** - taking a stream (array) of tokens and turning it into a tree of nested elements, which collectively represent the grammatical structure of the program. This tree is called an "AST" (Abstract Syntax Tree).
+3. **Code-Generation**  - the process of taking an AST and turning it into executable code. This part varies greatly depending on the language, the platform it's targeting, etc.
+
 ### Understanding Scope
 
 1. `Engine:` responsible for start-to-finish compilation and execution of our JavaScript program.
@@ -102,5 +112,16 @@ Global variable (without `var`):
 
 To prevent declaring variables without `var` use `"use strict";` before each module.
 
-###Functions First  
-Functions are hoisted first, and then variables.
+
+### Hoisting
+
+A compiler-phase task runs first  (declares all variables).  
+Then execution-phase task runs (i.e. assigns values to variables).
+
+#### Functions First  
+
+Function declarations are hoisted first, and then variables.  
+Function expressions don't hoist.
+
+#### `let` 
+`let` doesn't hoist.
